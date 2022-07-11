@@ -1,0 +1,189 @@
+.makes {
+  padding-bottom: 80px;
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.overlay-project {
+
+  &:hover .overlay-text,
+  &:focus .overlay-text {
+    transform: translateY(0%);
+  }
+}
+.boxMake
+ {
+  max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+
+  }
+
+.itemMake {
+display: flex;
+  &:not(:last-child) {
+        margin-bottom: 80px;
+}
+}
+.boxText {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.first .boxText {
+    margin-left: 45px;
+  }
+
+.second {
+  flex-direction: row-reverse;
+  .boxText {
+    margin-right: 45px;
+  }
+}
+
+.imageMake {
+ width: 570px;
+}
+
+.titleMake {
+  margin-bottom: 25px;
+  font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.04;
+    color: #0C122D;
+}
+
+.descriptionMake {
+  font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #575C74;
+    &:first-child {
+        text-indent: 1em;
+      }
+}
+.lastDescriptionMake {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #575C74;
+   &:last-child {
+   color: #FFFFFF;
+   background-color: #1B5FC1;
+   border-radius: 0px 20px 0px 0px;
+   }
+}
+
+.lastBoxMake {
+  display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.styleLastBoxMake {
+  display: flex;
+  height: 50%;
+}
+.contactBoxMake {
+padding: 0 40px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-items: flex-start;
+  background: #FFB800;
+  border-radius: 0px 0px 20px 0px;
+  
+}
+.titleContactMake {
+  margin-bottom: 5px;
+  font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2.5;
+    color: #0C122D;
+}
+.contactDescriptionMake {
+  margin-bottom: 28px;
+font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000000;
+}
+.takeContact {
+width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.btn-make {
+  color: #1B5FC1;
+  background-color: transparent;
+  border: 1px solid #1B5FC1;
+  &:first-child {
+      margin-right: 80px;
+    }
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #1B5FC1;
+      box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+               
+}
+.telBoxMakes {
+      display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+}
+ .callMake {
+      display: flex;
+        flex-direction: column;
+        font-family: 'Open Sans';
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1;
+          color: #000000;
+            &:hover,
+              &:focus {
+                transform: scale(1.1);
+              }
+ }
+.titleTelMakes {
+  font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #1B5FC1;
+}
+.iconTel {
+  margin-right: 13px;
+  width: 46px;
+  height: 46px;
+  background:  center / contain no-repeat url(../images/phone.svg);
+
+}

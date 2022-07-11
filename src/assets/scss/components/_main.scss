@@ -1,0 +1,110 @@
+.main {
+    padding-left: 329px;
+    padding-right: 61px;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    background: #F7FDFB;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.content {
+    margin-right: 48px;
+    padding-top: 160px;
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subTitle
+{
+    margin-bottom: 30px;
+    display: flex;
+        align-items: center;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 2.14;
+        color: #FFB800;
+}
+
+.title {
+   margin-bottom: 35px;
+   font-weight: 700;
+   font-size: 72px;
+   line-height: 1.13;
+   display: flex;
+   align-items: center;  
+    color: #0C122D;
+}
+
+.description {
+    margin-bottom: 57px;
+font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #575C74;
+}
+
+.overlay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-image: url(../images/back-hero-desk.png);
+    z-index: 2;
+    // margin-top: -12%;
+    // opacity: 15%;
+// background-image: linear-gradient(to right,
+//             rgba(47, 48, 58, 0.4),
+//             rgba(47, 48, 58, 0.4)),
+//         url(../images/back-hero-desk.png);
+        
+        background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(253, 253, 247, 0.85)), url("../images/back-hero-desk.png");
+}
+
+
+.box {
+    width: 927px;
+    height: 821px;
+    border-radius: 0px 0px 0px 150px;
+    
+}
+.image {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: -91.8%;
+    width: 496px;
+    display: inherit;
+z-index: 4;
+opacity: 100;
+}
+.heroNavigation {
+    display: inline-flex;
+}
+.btnHero {
+    color: #FFB800;
+    border: 1px solid #FFB800;
+    background-color: transparent;
+    &:first-child {
+            margin-right: 20px;
+        }
+        &:hover,
+            &:focus {
+                color: #fff;
+                background-color: #1B5FC1;
+                border: 1px solid #1B5FC1;
+                box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+}
+
