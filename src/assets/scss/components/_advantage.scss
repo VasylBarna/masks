@@ -1,0 +1,49 @@
+.advantage{
+  padding-bottom: 53px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantageList
+{
+  max-width: 1140px;
+    display: flex;
+}
+.advantageItem{
+display: flex;
+min-width: 254px;
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+    
+.titleAdvantage
+{
+  margin-bottom: 15px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #0C122D;
+}
+
+.decriptionAdvantage {
+    font-family: Open Sans;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.46;
+      color: #575C74;
+}
+
+.advantageText {
+display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
