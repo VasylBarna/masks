@@ -1,9 +1,10 @@
 .main {
-    padding-left: 329px;
-    padding-right: 61px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 80px;
     padding-bottom: 64px;
-    background: #F7FDFB;
+    display: flex;
+    justify-content: flex-end;
 }
 .hero {
     display: flex;
@@ -48,7 +49,7 @@
 
 .description {
     margin-bottom: 57px;
-font-family: 'Open Sans';
+font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -57,36 +58,20 @@ font-family: 'Open Sans';
 }
 
 .overlay {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    // background-image: url(../images/back-hero-desk.png);
-    z-index: 2;
-    // margin-top: -12%;
-    // opacity: 15%;
-// background-image: linear-gradient(to right,
-//             rgba(47, 48, 58, 0.4),
-//             rgba(47, 48, 58, 0.4)),
-//         url(../images/back-hero-desk.png);
-        
-        background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(253, 253, 247, 0.85)), url("../images/back-hero-desk.png");
+    margin-top: -175px;
+    z-index: 2;      
 }
 
 
 .box {
     width: 927px;
-    height: 821px;
     border-radius: 0px 0px 0px 150px;
     
 }
 .image {
-    position: relative;
     padding-left: 40px;
-    margin-bottom: -91.8%;
-    width: 496px;
-    display: inherit;
-z-index: 4;
-opacity: 100;
+    padding-top: 147px;
+    width:auto;    
 }
 .heroNavigation {
     display: inline-flex;

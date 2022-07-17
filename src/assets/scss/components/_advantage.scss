@@ -1,10 +1,9 @@
 .advantage{
-  padding-bottom: 133px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-  background: #F7FDFB;
+  padding-bottom: 53px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .advantageList
 {
@@ -22,7 +21,7 @@ min-width: 254px;
 .titleAdvantage
 {
   margin-bottom: 15px;
-  font-family: 'Open Sans';
+  font-family: Open Sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
@@ -30,7 +29,7 @@ min-width: 254px;
 }
 
 .decriptionAdvantage {
-    font-family: 'Open Sans';
+    font-family: Open Sans;
       font-weight: 400;
       font-size: 15px;
       line-height: 1.46;

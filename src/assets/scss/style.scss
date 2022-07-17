@@ -4,6 +4,7 @@
 @import 'utils/breakpoints';
 
 @import 'base/container';
+@import 'base/wrapper';
 @import 'components/header';
 @import 'components/main';
 @import 'components/advantage';
@@ -11,6 +12,9 @@
 @import 'components/overlay';
 @import 'components/certification';
 @import 'components/reasons';
+@import 'components/reviews';
+@import 'components/lastBlock';
+@import 'components/contacts';
 @import 'components/footer';
 
 @import 'components/modal';

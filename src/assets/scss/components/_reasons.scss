@@ -4,3 +4,79 @@
   padding-bottom: 23px;
   width: 1140px;
 }
+.boxReasons {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+}
+.imageReasons {
+  margin-right: 90px;
+  width: 400px;
+  min-height: 630px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 16px 0px;
+}
+
+.titleReasons {
+  margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.04;
+    color: #0C122D;
+}
+
+.descriptionReasons {
+  margin-bottom: 35px;
+  font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #575C74;
+}
+
+.listReasons {
+    width: 650px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: stretch;
+}
+
+.itemReasons {
+  width: 312px;
+  display: flex;
+  &:nth-last-child(n+3) {
+      margin-bottom: 20px;
+    }
+ &:nth-child(odd) {
+   margin-right: 25px;
+ }
+}
+
+.itemIconReasons {
+  margin-right: 18px;
+  width: 56px;
+    height: 56px;
+}
+
+
+.itemTitleReasons {
+  margin-bottom: 2px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+color: #0C122D;
+}
+
+.itemDescReasons {
+  font-family: Open Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.46;
+color: #575C74;
+}
+
+

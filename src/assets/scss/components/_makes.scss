@@ -1,4 +1,5 @@
 .makes {
+  padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
     justify-content: center;
@@ -56,7 +57,7 @@ display: flex;
 
 .titleMake {
   margin-bottom: 25px;
-  font-family: 'Rubik';
+  font-family: Rubik;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.04;
@@ -64,7 +65,7 @@ display: flex;
 }
 
 .descriptionMake {
-  font-family: 'Open Sans';
+  font-family: Open Sans;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -73,11 +74,19 @@ display: flex;
         text-indent: 1em;
       }
 }
+
+.styleLastBoxMake {
+  &:first-child {
+      background-color: #fff;
+
+    }
+}
+
 .lastDescriptionMake {
   padding: 0 30px;
   display: flex;
   align-items: center;
-  font-family: 'Open Sans';
+  font-family: Open Sans;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -116,7 +125,7 @@ padding: 0 40px;
 }
 .titleContactMake {
   margin-bottom: 5px;
-  font-family: 'Rubik';
+  font-family: Rubik;
     font-weight: 700;
     font-size: 20px;
     line-height: 2.5;
@@ -124,7 +133,7 @@ padding: 0 40px;
 }
 .contactDescriptionMake {
   margin-bottom: 28px;
-font-family: 'Open Sans';
+font-family: Open Sans;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -142,9 +151,9 @@ width: 100%;
 .btn-make {
   color: #1B5FC1;
   background-color: transparent;
-  border: 1px solid #1B5FC1;
+  border: 1px solid #1B5FC1;  
   &:first-child {
-      margin-right: 80px;
+      margin-right: 40px;
     }
     &:hover,
     &:focus {
@@ -155,15 +164,21 @@ width: 100%;
       }
                
 }
+
 .telBoxMakes {
-      display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+padding-left: 39px;
+border-left: 1px solid #fff;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+
 }
+
  .callMake {
       display: flex;
         flex-direction: column;
-        font-family: 'Open Sans';
+        font-family: Open Sans;
           font-weight: 600;
           font-size: 24px;
           line-height: 1;
@@ -174,7 +189,7 @@ width: 100%;
               }
  }
 .titleTelMakes {
-  font-family: 'Open Sans';
+  font-family: Open Sans;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.71;
@@ -185,5 +200,4 @@ width: 100%;
   width: 46px;
   height: 46px;
   background:  center / contain no-repeat url(../images/phone.svg);
-
 }
