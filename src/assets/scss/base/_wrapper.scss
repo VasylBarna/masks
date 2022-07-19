@@ -1,3 +1,18 @@
 .wrapper {
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1180px no-repeat, url("../images/back-hero-desk.png") right 10px no-repeat
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1190px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat, ;
+}
+
+.wrapperImg {
+  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1190px no-repeat;
+}
+
+.back {
+  position: absolute;
+  width: auto;
+  right: 0px;
+  top: 5px;
+  z-index: -1;
+  border-radius: 0px 0px 0px 150px;
 }

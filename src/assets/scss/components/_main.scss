@@ -1,11 +1,12 @@
 .main {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
+    padding-top: 55px;
     padding-bottom: 64px;
-    display: flex;
-    justify-content: flex-end;
+    width: 1140px;
 }
+
 .hero {
     display: flex;
     flex-direction: row;
@@ -16,7 +17,6 @@
 }
 
 .content {
-    margin-right: 48px;
     padding-top: 160px;
     width: 555px;
     display: flex;
@@ -30,11 +30,11 @@
 {
     margin-bottom: 30px;
     display: flex;
-        align-items: center;
+    align-items: center;
     font-weight: 500;
-        font-size: 14px;
-        line-height: 2.14;
-        color: #FFB800;
+    font-size: 14px;
+     line-height: 2.14;
+    color: #FFB800;
 }
 
 .title {
@@ -49,33 +49,18 @@
 
 .description {
     margin-bottom: 57px;
-font-family: Open Sans;
-    font-style: normal;
+   font-family: Open Sans;
+    text-align: justify;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #575C74;
 }
 
-.overlay {
-    margin-top: -175px;
-    z-index: 2;      
-}
-
-
-.box {
-    width: 927px;
-    border-radius: 0px 0px 0px 150px;
-    
-}
-.image {
-    padding-left: 40px;
-    padding-top: 147px;
-    width:auto;    
-}
 .heroNavigation {
     display: inline-flex;
 }
+
 .btnHero {
     color: #FFB800;
     border: 1px solid #FFB800;

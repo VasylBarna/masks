@@ -1,15 +1,15 @@
 .advantage{
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 53px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 1140px;
 }
+
 .advantageList
 {
-  max-width: 1140px;
     display: flex;
 }
+
 .advantageItem{
 display: flex;
 min-width: 254px;
@@ -29,17 +29,19 @@ min-width: 254px;
 }
 
 .decriptionAdvantage {
-    font-family: Open Sans;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 1.46;
-      color: #575C74;
+  font-family: Open Sans;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.46;
+  color: #575C74;
 }
 
 .advantageText {
+max-width: 210px;
 display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+flex-direction: column;
+justify-content: space-around;
 }
 
 .icon {

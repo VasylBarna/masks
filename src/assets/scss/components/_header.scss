@@ -1,26 +1,15 @@
 .header {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     padding-top: 25px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    max-height: 65px;
-    // border-bottom: 1px solid #E1E6EC;
-    @media screen and (min-width: $tablet) {
-    }
+    padding-bottom: 25px;
+    position: relative;
+    width: 1140px;
+    z-index: 2;
+
 }
 
 .navigation {
-
-    // @media screen and (max-width: $max-mobile) {
-    //     position: fixed;
-    //     width: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     display: flex;
-    // }
 
      @media screen and (min-width: $tablet) {
          position: relative;
@@ -33,50 +22,33 @@
     position: relative;
     width: 100%;
     z-index: 3;
-        font-weight: 400;
-            font-family: Open Sans;
-            color: #575C74;
-            font-size: 16px;
-            line-height: 1.87;
+    font-weight: 400;
+    font-family: Open Sans;
+    color: #575C74;
+    font-size: 16px;
+    line-height: 1.87;
 
-
-    // @media screen and (min-width: $tablet) {
-    //     margin-left: auto;
-    // }
 
 display: flex;
 }
 .logo {
-    margin-right: 500px;
+    margin-right: auto;
     display: flex;
     align-items: center;
 }
 .menu {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .site-nav {
 display: flex;
-align-items: center;
-
-    // @media screen and (max-width: $max-mobile) {
-    //     display: flex;
-    //     flex-direction: column;
-    //     margin-bottom: 60px;
-    // }
-    
+align-items: center;   
 }
 
 .site-nav .item:not(:last-child) {
     @media screen and (min-width: $tablet) {
         margin-right: 45px;
     }
-
-    // @media screen and (max-width: $max-mobile) {
-    //     margin-bottom: 40px;
-    // }
 }
 
 .site-nav .link {
@@ -86,8 +58,8 @@ align-items: center;
 
     @media screen and (min-width: $tablet) {
         display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     &.current {

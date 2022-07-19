@@ -1,21 +1,21 @@
-@import 'utils/normalize';
-@import 'utils/variables';
-@import 'utils/visually-hiden';
-@import 'utils/breakpoints';
+@import 'src/assets/scss/utils/normalize';
+@import 'src/assets/scss/utils/variables';
+@import 'src/assets/scss/utils/visually-hiden';
+@import 'src/assets/scss/utils/breakpoints';
 
-@import 'base/container';
-@import 'base/wrapper';
-@import 'components/header';
-@import 'components/main';
-@import 'components/advantage';
-@import 'components/makes';
-@import 'components/overlay';
-@import 'components/certification';
-@import 'components/reasons';
-@import 'components/reviews';
-@import 'components/lastBlock';
-@import 'components/contacts';
-@import 'components/footer';
+@import 'src/assets/scss/base/container';
+@import 'src/assets/scss/base/wrapper';
+@import 'src/assets/scss/components/header';
+@import 'src/assets/scss/components/main';
+@import 'src/assets/scss/components/advantage';
+@import 'src/assets/scss/components/makes';
+@import 'src/assets/scss/components/overlay';
+@import 'src/assets/scss/components/certification';
+@import 'src/assets/scss/components/reasons';
+@import 'src/assets/scss/components/reviews';
+@import 'src/assets/scss/components/lastBlock';
+@import 'src/assets/scss/components/contacts';
+@import 'src/assets/scss/components/footer';
 
-@import 'components/modal';
+@import 'src/assets/scss/components/modal';
 

@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="boxFooter">
     <div class="blocksFooter">
-      <img class="imageFooter" src="../assets//images/logo.png" alt="logo" />
+      <img class="imageFooter" src="<?php bloginfo('template_url'); ?>./src/assets/images/logo.png" alt="logo" />
       <p class="textFooter">
         Our team is led by several chief engineers, composed of a large number
         of researchers absorbed in their work in our comprehensive laboratory,
@@ -23,7 +23,7 @@
       <div class="blockSocialsFooter">
         <img
           class="socialsIcon"
-          src="../assets/images/social.png"
+          src="<?php bloginfo('template_url'); ?>./src/assets/images/social.png"
           alt="Socials icon"
         />
         <ul class="listFooter">
@@ -40,3 +40,10 @@
     <p class="textFinishingFooter">Copyright © 2020 N95</p>
   </div>
 </footer>
+</div>
+</div>
+
+<?php wp_footer() ?>
+
+  </body>
+</html>

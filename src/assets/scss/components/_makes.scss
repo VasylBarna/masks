@@ -1,11 +1,11 @@
 .makes {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 80px;
-  display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+  width: 1140px;
 }
+
 .overlay-project {
 
   &:hover .overlay-text,
@@ -15,7 +15,6 @@
 }
 .boxMake
  {
-  max-width: 1140px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,27 +57,27 @@ display: flex;
 .titleMake {
   margin-bottom: 25px;
   font-family: Rubik;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.04;
-    color: #0C122D;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.04;
+  color: #0C122D;
 }
 
 .descriptionMake {
   font-family: Open Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color: #575C74;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: justify;
+  color: #575C74;
     &:first-child {
-        text-indent: 1em;
-      }
+      text-indent: 1em;
+    }
 }
 
 .styleLastBoxMake {
   &:first-child {
-      background-color: #fff;
-
+    background-color: #fff;
     }
 }
 
@@ -90,6 +89,7 @@ display: flex;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
+  text-align: justify;
   color: #575C74;
    &:last-child {
    color: #FFFFFF;
@@ -137,6 +137,7 @@ font-family: Open Sans;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
+  text-align: justify;
   color: #000000;
 }
 .takeContact {
@@ -199,5 +200,5 @@ align-items: flex-start;
   margin-right: 13px;
   width: 46px;
   height: 46px;
-  background:  center / contain no-repeat url(../images/phone.svg);
+  background:  center / contain no-repeat url(../images/phone.png);
 }
