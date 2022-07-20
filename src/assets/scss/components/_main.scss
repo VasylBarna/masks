@@ -4,7 +4,7 @@
     margin-right: auto;
     padding-top: 55px;
     padding-bottom: 64px;
-    width: 1140px;
+    width: $with-content;
 }
 
 .hero {
@@ -34,7 +34,7 @@
     font-weight: 500;
     font-size: 14px;
      line-height: 2.14;
-    color: #FFB800;
+    color: $background-accent;
 }
 
 .title {
@@ -44,37 +44,18 @@
    line-height: 1.13;
    display: flex;
    align-items: center;  
-    color: #0C122D;
+  color: $title-text-color;
 }
 
 .description {
     margin-bottom: 57px;
-   font-family: Open Sans;
     text-align: justify;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
-    color: #575C74;
 }
 
 .heroNavigation {
     display: inline-flex;
 }
 
-.btnHero {
-    color: #FFB800;
-    border: 1px solid #FFB800;
-    background-color: transparent;
-    &:first-child {
-            margin-right: 20px;
-        }
-        &:hover,
-            &:focus {
-                color: #fff;
-                background-color: #1B5FC1;
-                border: 1px solid #1B5FC1;
-                box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
-                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
-}
+
 

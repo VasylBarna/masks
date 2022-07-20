@@ -26,7 +26,7 @@
 <?php wp_head() ?>
 
 </head>
-<body>
+<body class="full-document">
 <div class="container">
 <div class="wrapper">
 <div class="wrapperImg">

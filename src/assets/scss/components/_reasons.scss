@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 23px;
-  width: 1140px;
+  width: $with-content;
 }
 .boxReasons {
   display: flex;
@@ -20,29 +20,24 @@
 
 .titleReasons {
   margin-bottom: 25px;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-title-h2;
   line-height: 1.04;
-  color: #0C122D;
+  color: $title-text-color;
 }
 
 .descriptionReasons {
   margin-bottom: 35px;
-  font-family: Open Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: justify;
-    color: #575C74;
+  text-align: justify;
 }
 
 .listReasons {
-    width: 650px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-content: space-between;
-      align-items: stretch;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
 }
 
 .itemReasons {
@@ -59,26 +54,22 @@
 .itemIconReasons {
   margin-right: 18px;
   width: 56px;
-    height: 56px;
+  height: 56px;
 }
-
 
 .itemTitleReasons {
   margin-bottom: 2px;
-  font-family: Open Sans;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-size: 20px;
   line-height: 1.4;
-color: #0C122D;
+ color: $title-text-color;
 }
 
 .itemDescReasons {
-  font-family: Open Sans;
-  font-weight: 400;
+  font-weight: $font-weight-body;
   font-size: 15px;
   line-height: 1.46;
   text-align: justify;
- color: #575C74;
 }
 
 

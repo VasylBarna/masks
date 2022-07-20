@@ -1,0 +1,33 @@
+.full-document {
+    color: $text-color;
+    font-family: $font-family-body;
+    font-style: normal;
+    font-size: $font-size-body;
+    line-height: 1.87;
+    background-color: $primary-white-color;
+    text-decoration: none;
+}
+
+.full-document.modal-open {
+    overflow: hidden;
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1920px;
+    }
+}

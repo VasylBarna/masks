@@ -64,7 +64,7 @@
         alt="credit-card"
       />
       <div class="advantageText">
-        <h2 class="titleAdvantage">Secure and Easy Payment Methods</h2>
+        <p class="titleAdvantage">Secure and Easy Payment Methods</p>
         <p class="decriptionAdvantage">
           Pay your way, whether by credit card, PayPal or the redemption of
           earned credits.
@@ -80,7 +80,7 @@
     <div class="itemMake first">
       <img class="imageMake" src="<?php bloginfo('template_url'); ?>./src/assets/images/imageMake1.png" alt="image Makes" />
       <div class="boxText">
-        <h3 class="titleMake">N95 Respirators</h3>
+        <h2 class="titleMake">N95 Respirators</h2>
         <p class="descriptionMake">
           The N95 mask is a form of respiratory protective wear worn over the
           nose and mouth to help minimise the chance of inhaling airborne
@@ -104,9 +104,9 @@
     <div class="itemMake second">
       <img class="imageMake" src="<?php bloginfo('template_url'); ?>/src./assets/images/imageMake2.png" alt="image Makes" />
       <div class="boxText">
-        <h3 class="titleMake">
+        <h2 class="titleMake">
           N95 Respirators In Industrial And Health Care Settings
-        </h3>
+        </h2>
         <p class="descriptionMake">
           Most N95 respirators are manufactured for use in construction and
           other industrial type jobs that expose workers to dust and small

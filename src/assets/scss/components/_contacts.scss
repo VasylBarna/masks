@@ -1,39 +1,39 @@
 .contacts {
   margin-left: auto;
   margin-right: auto;
-  background: #FFB800;
+  background: $background-accent;
 }
 
 .boxContacts {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: $with-content;
 }
 
 .listContacts {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-align-content: center;
-justify-content: center;
-align-items: center;
+  width: $with-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .itemContacts {
 display: flex;
 align-items: center;
-&:not(:last-child) {
-   margin-right: 136px;
+  &:not(:first-child) {
+  padding-left: 136px;
+  border-left: 1px solid #fff;
   }
-    &:not(:first-child) {
-    padding-left: 136px;
-      border-left: 1px solid #fff;
-    }
 }
 
 .imageContacts{
   margin-right: 15px;
-width: auto;
-height: fit-content;
+ width: auto;
+ height: fit-content;
 }
 
 .titleContacts {
@@ -41,22 +41,19 @@ height: fit-content;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
- color: #0C122D;
+  color: $title-text-color;
 }
 
 .textContacts {
 display: flex;
 flex-direction: column;
-font-family: Open Sans;
-  font-weight: 400;
   font-size: 15px;
   line-height: 1.33;
-  color: #0C122D;
+  color: $title-text-color;
 }
 
 .maps {
-  // display: none;
-  margin-right: 10px;
+margin-right: 10px;
 width: 150px;
 height: 100px;
 border: 0;
