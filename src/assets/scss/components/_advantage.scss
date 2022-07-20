@@ -2,20 +2,43 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 53px;
-  width: $with-content;
+  // width: $with-content;
 }
 
 .advantageList
 {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: stretch;
+      }
 }
 
 .advantageItem {
-display: flex;
-min-width: 254px;
+
+  @media screen and (min-width: $tablet) {
+  width: calc((100% - 60px) / 2);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: stretch;
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  }
+     @media screen and (min-width: $desktop) {
+  display: flex;
+  min-width: 254px;
   &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin-right: 30px;
+  }
+     }
 }
     
 .titleAdvantage {

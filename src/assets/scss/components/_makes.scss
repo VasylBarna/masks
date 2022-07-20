@@ -1,13 +1,19 @@
 .makes {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  width: $with-content;
+
+  // width: $with-content;
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+     @media screen and (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+     }
 }
 
-.boxMake
- {
+.boxMake {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,8 +24,15 @@
 
 .itemMake {
 display: flex;
+@media screen and (min-width: $tablet) {
   &:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+    }
+  }
+@media screen and (min-width: $desktop) {
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
 }
 
@@ -30,33 +43,62 @@ display: flex;
     align-content: space-between;
     justify-content: space-between;
     align-items: stretch;
+    overflow: hidden;
 }
 
 .first .boxText {
+    @media screen and (min-width: $tablet) {
+    margin-left: 15px;
+    }
+    @media screen and (min-width: $desktop) {
     margin-left: 45px;
+      }
   }
 
 .second {
   flex-direction: row-reverse;
   .boxText {
-    margin-right: 45px;
+  @media screen and (min-width: $tablet) {
+      margin-right: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 45px;
+    }
   }
 }
 
 .imageMake {
- width: 570px;
+@media screen and (min-width: $tablet) {
+width: 50%;
+}
+@media screen and (min-width: $desktop) {
+  width: 570px;
+}
+}
+
+.overlay-project .imageMake {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+width: 100%;}
 }
 
 .titleMake {
-  margin-bottom: 25px;
+  max-width: 525px;
   font-family: $font-family-title;
   font-weight: $font-weight-bold;
-  font-size: $font-size-title-h2;
   line-height: 1.04;
   color: $title-text-color;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 15px;
+    font-size: 36px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 25px;
+      font-size: $font-size-title-h2;
+    }
 }
 
 .descriptionMake {
+  max-width: 525px;
   font-weight: $font-weight-bold;
   text-align: justify;
     &:first-child {
@@ -71,31 +113,52 @@ display: flex;
 }
 
 .lastDescriptionMake {
-  padding: 0 30px;
   display: flex;
   align-items: center;
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
-   &:last-child {
-   color: $primary-white-color;
-   background-color: $revert-color-button;
-   border-radius: 0px 20px 0px 0px;
-   }
+  &:last-child {
+    color: $primary-white-color;
+     background-color: $revert-color-button;
+  }
+  
+  @media screen and (min-width: $tablet) {
+  padding: 10px 20px;
+  }
+  @media screen and (min-width: $desktop) {
+  padding: 0 30px;
+  max-width: 285px;
+  &:last-child {
+  border-radius: 0px 20px 0px 0px;
+  }
+    }
 }
 
 .lastBoxMake {
   display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  width: 50%;
+  }       
 }
 
 .styleLastBoxMake {
   display: flex;
   height: 50%;
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto;
+  } 
 }
 
 .contactBoxMake {
@@ -108,6 +171,10 @@ padding: 0 40px;
   align-items: flex-start;
   background: $background-accent;
   border-radius: 0px 0px 20px 0px;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding: 10px 20px;
+    height: auto;
+    }
   
 }
 .titleContactMake {
@@ -134,14 +201,26 @@ width: 100%;
   justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 }
 
 .telBoxMakes {
-padding-left: 39px;
-border-left: 1px solid #fff;
+padding-top: 15px;
+padding-bottom: 10px;
+border-top: 1px solid #fff;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
+@media screen and (min-width: $desktop) {
+padding-left: 39px;
+border-left: 1px solid #fff;
+}
+
 }
 
  .callMake {

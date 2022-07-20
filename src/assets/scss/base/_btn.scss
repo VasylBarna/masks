@@ -45,19 +45,22 @@
 }
 
 .btn-make {
+  margin-bottom: 15px;
   color: $revert-color-button;
   background-color: transparent;
   border: 1px solid $revert-color-button;
-  &:first-child {
-    margin-right: 40px;
-  }
   &:hover,
   &:focus {
     color: $white-button-color;
     background-color: $revert-color-button;
     box-shadow: $box-shadow-button;
-    transition: $transition-timing-function;
+    transition: color $transition-timing-function;
   }
+    @media screen and (min-width: $desktop) {
+  &:first-child {
+      margin-right: 40px;
+    }
+    }
 }
 
 .btnLastBlock {

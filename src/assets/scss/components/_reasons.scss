@@ -9,6 +9,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
+  overflow: hidden;
 }
 .imageReasons {
   margin-right: 90px;
@@ -20,6 +21,7 @@
 
 .titleReasons {
   margin-bottom: 25px;
+  max-width: 650px;
   font-weight: $font-weight-bold;
   font-size: $font-size-title-h2;
   line-height: 1.04;
@@ -27,6 +29,7 @@
 }
 
 .descriptionReasons {
+  max-width: 650px;
   margin-bottom: 35px;
   text-align: justify;
 }

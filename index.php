@@ -89,7 +89,7 @@
           called melt blowing. During this process, the inner layer of the N95
           mask is created which forms the filtration layer capable of filtering
           out at least 95% of airborne particles when worn correctly.
-          <p class="descriptionMake">During outbreaks of respiratory illnesses and during periods of
+          During outbreaks of respiratory illnesses and during periods of
           intense air pollution, wearing N95 masks has been shown to help reduce
           the inhalation of compromised air, filtering out nasty pathogens which
           lead to illness or which can aggravate existing respiratory problems.
@@ -97,7 +97,7 @@
           remaining fit and healthy and people with pre-existing conditions or
           respiratory fragility can particularly benefit from wearing face masks
           while they are out in public and unable to control the breathing
-          environments that they find themselves in.</p>
+          environments that they find themselves in.
         </p>
       </div>
     </div>
@@ -114,15 +114,13 @@
           Technology Laboratory (NPPTL) in the National Institute for
           Occupational Safety and Health (NIOSH), which is part of the Centers
           for Disease Control and Prevention (CDC).
-          <p class="descriptionMake">
-            However, some N95 respirators are intended for use in a health care
+          However, some N95 respirators are intended for use in a health care
           setting. Specifically, single-use, disposable respiratory protective
           devices used and worn by health care personnel during procedures to
           protect both the patient and health care personnel from the transfer
           of microorganisms, body fluids, and particulate material. These
           surgical N95 respirators are class II devices regulated by the FDA,
           under 21 CFR 878.4040, and CDC NIOSH under 42 CFR Part 84.
-          </p>
         </p>
       </div>
     </div>
@@ -151,7 +149,7 @@
         <div class="contactBoxMake">
           <h4 class="titleContactMake">Proudly Made in Hong Kong</h4>
           <p class="contactDescriptionMake">
-            Our factory is located in Hong Kong. <br> Equipped with machines and
+            Our factory is located in Hong Kong. Equipped with machines and
             assembly line of the best quality on the market to ensure quality
             control.
           </p>
@@ -198,7 +196,7 @@
     <div class="textBoxReasons">
       <p class="titleReasons">Reasons To Choose Our Products</p>
       <p class="descriptionReasons">
-All products of Health Pro have obtained the certifications issued by national specialized agencies and testing laboratories. <br>
+All products of Health Pro have obtained the certifications issued by national specialized agencies and testing laboratories.
 They have also passed the quality inspection of several international famous testing institutions. We have absolute confidence that every product of Health Pro is a of the top quality.
       <ul class="listReasons">
         <li class="itemReasons">

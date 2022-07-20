@@ -1,18 +1,27 @@
 .wrapper {
+  overflow: hidden;
   position: relative;
   z-index: 1;
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1190px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat, ;
+  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat, ;
 }
 
 .wrapperImg {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(247, 253, 251, 0.85)) top/ auto 1190px no-repeat;
+  }
   background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1190px no-repeat;
 }
 
 .back {
   position: absolute;
   width: auto;
-  right: 0px;
+  right: -15px;
   top: 5px;
   z-index: -1;
   border-radius: 0px 0px 0px 150px;
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    width: 75%;
+    top: 96px;
+    border-radius: 0px 0px 0px 125px;
+      }
 }

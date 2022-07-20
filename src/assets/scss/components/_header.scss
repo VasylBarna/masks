@@ -4,7 +4,8 @@
     padding-top: 25px;
     padding-bottom: 25px;
     position: relative;
-    width: $with-content;
+    border-bottom: 1px solid #E1E6EC;
+    // width: $with-content;
     z-index: 2;
 }
 
@@ -25,6 +26,7 @@
 
 .logo {
     margin-right: auto;
+    max-width: 540px;
     display: flex;
     align-items: center;
     color: $background-accent;
@@ -39,9 +41,12 @@ align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
-    @media screen and (min-width: $tablet) {
-        margin-right: 45px;
+@media screen and (min-width: $tablet) {
+    margin-right: 30px;
     }
+@media screen and (min-width: $desktop) {
+    margin-right: 45px;
+   }
 }
 
 .site-nav .link {
