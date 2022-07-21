@@ -1,24 +1,37 @@
 .footer {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 73px;
-  padding-bottom: 30px;;
   background-color: #ECF0F5;
+  @media screen and (min-width: $tablet) {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+  padding-top: 73px;
+  padding-bottom: 30px;
+  }
 }
 
 .boxFooter {
-  padding-bottom: 68px;
-  margin-bottom: 47px;
   margin-left: auto;
   margin-right: auto;
-  width: $with-content;
   display: flex;
   flex-wrap: nowrap;
   align-content: space-between;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  border-bottom: 1px solid #E1E6EC;    
+  border-bottom: 1px solid #E1E6EC;
+
+  @media screen and (min-width: $tablet) {
+  padding-bottom: 45px;
+  margin-bottom: 30px;
+    }
+  @media screen and (min-width: $desktop) {
+  width: $with-content;
+  padding-bottom: 68px;
+  margin-bottom: 47px;
+  }
 }
 
 .blocksFooter {
@@ -33,9 +46,12 @@
 .titleListFooter {
   margin-bottom: 12px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: $title-text-color;
+  @media screen and (min-width: $desktop) {
+ font-size: 20px;
+  }
 }
 
 .imageFooter {
@@ -44,7 +60,7 @@
 }
 
 .textFooter {
-  width: 340px;
+  width: 245px;
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;

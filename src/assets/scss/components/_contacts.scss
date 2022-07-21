@@ -5,51 +5,77 @@
 }
 
 .boxContacts {
-  padding-top: 40px;
-  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
   width: $with-content;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
 }
 
 .listContacts {
-  width: $with-content;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
+    @media screen and (min-width: $desktop) {
+    width: $with-content;
+ 
+    }
 }
 
 .itemContacts {
 display: flex;
 align-items: center;
+  @media screen and (min-width: $tablet) {
+      &:not(:first-child) {
+        padding-left: 50px;
+        border-left: 1px solid #fff;
+      }
+    }
+  @media screen and (min-width: $desktop) {
   &:not(:first-child) {
-  padding-left: 136px;
-  border-left: 1px solid #fff;
+    padding-left: 136px;
+    border-left: 1px solid #fff;
   }
+}
 }
 
 .imageContacts{
-  margin-right: 15px;
+margin-right: 10px;
  width: auto;
  height: fit-content;
+  @media screen and (min-width: $desktop) {
+  margin-right: 15px;
+  }
 }
 
 .titleContacts {
   margin-bottom: 1px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   color: $title-text-color;
+  @media screen and (min-width: $desktop) {
+  font-size: 20px;
+  }
 }
 
 .textContacts {
 display: flex;
 flex-direction: column;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.33;
   color: $title-text-color;
+  @media screen and (min-width: $desktop) {
+  font-size: 15px;
+  }
 }
 
 .maps {

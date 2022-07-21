@@ -1,8 +1,10 @@
 .wrapper {
-  overflow: hidden;
   position: relative;
   z-index: 1;
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat, ;
+  
+@media screen and (min-width: $desktop) {
+  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1614px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
+}
 }
 
 .wrapperImg {
@@ -15,13 +17,13 @@
 .back {
   position: absolute;
   width: auto;
-  right: -15px;
   top: 5px;
+  right: 0;
   z-index: -1;
   border-radius: 0px 0px 0px 150px;
     @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: 75%;
     top: 96px;
-    border-radius: 0px 0px 0px 125px;
+    border-radius: 0px 0px 0px 330px;
       }
 }

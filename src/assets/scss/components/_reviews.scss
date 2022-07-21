@@ -1,12 +1,18 @@
 .reviews {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 85px;
-  width: $with-content;
+  padding-bottom: 45px;
   text-align: -webkit-center;
+  @media screen and (min-width: $desktop) {
+    width: $with-content;
+    padding-bottom: 85px;
+  }
 }
 
 .imageReviews {
+
+@media screen and (min-width: $desktop) {
 object-fit: none;
-  width: 97%;
+width: 97%;
+}
 }

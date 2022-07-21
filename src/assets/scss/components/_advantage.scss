@@ -1,8 +1,11 @@
 .advantage{
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 53px;
-  // width: $with-content;
+  padding-bottom: 60px;
+@media screen and (min-width: $desktop) {
+width: $with-content;
+padding-bottom: 130px;
+}
 }
 
 .advantageList

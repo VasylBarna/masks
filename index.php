@@ -174,13 +174,13 @@
     <p class="titleCertification">Our Lab Certification</p>
     <ul class="listCertification">
       <li class="itemCertification">
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>./src/assets/images/fda.png" alt="FDA" /></a>
+        <a href="#"><img class="imageCertification" src="<?php bloginfo('template_url'); ?>./src/assets/images/fda.png" alt="FDA" /></a>
       </li>
       <li class="itemCertification">
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>./src/assets/images/nelson.png" alt="NELSON" /></a>
+        <a href="#"><img class="imageCertification" src="<?php bloginfo('template_url'); ?>./src/assets/images/nelson.png" alt="NELSON" /></a>
       </li>
       <li class="itemCertification">
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>./src/assets/images/cnas.png" alt="CNAS" /></a>
+        <a href="#"><img class="imageCertification" src="<?php bloginfo('template_url'); ?>./src/assets/images/cnas.png" alt="CNAS" /></a>
       </li>
     </ul>
   </div>

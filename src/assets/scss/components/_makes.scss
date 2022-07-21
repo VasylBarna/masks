@@ -213,9 +213,12 @@ width: 100%;
 padding-top: 15px;
 padding-bottom: 10px;
 border-top: 1px solid #fff;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 @media screen and (min-width: $desktop) {
 padding-left: 39px;
 border-left: 1px solid #fff;
