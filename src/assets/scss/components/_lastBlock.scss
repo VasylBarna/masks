@@ -4,7 +4,7 @@
   padding-bottom: 60px;
   @media screen and (min-width: $desktop) {
   width: $with-content;
-  padding-bottom: 120px;
+  padding-bottom: 106px;
       }
 }
 
@@ -15,14 +15,14 @@ display: flex;
   align-content: center;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .titleLastBlock {
   font-weight: $font-weight-bold;
   line-height: 1.04;
   color: $title-text-color;
-  @media screen and (min-width: $tablet) {
+  text-align: center;
+  @media screen and (max-width: $max-tablet){
   margin-bottom: 20px;
   font-size: 36px;
   }
@@ -38,6 +38,9 @@ width: 590px;
 display: flex;
 justify-content: center;
 text-align: center;
+  @media screen and (max-width: $max-tablet) {
+max-width: 420px;
+  }
 @media screen and (min-width: $desktop) {
 margin-bottom: 35px;
   }

@@ -4,13 +4,25 @@
     padding-top: 25px;
     padding-bottom: 25px;
     position: relative;
-    border-bottom: 1px solid #E1E6EC;
-    // width: $with-content;
     z-index: 2;
+    @media screen and (max-width: $max-tablet){
+    border-bottom: 1px solid #E1E6EC;
+        }
+    @media screen and (min-width: $desktop) {
+        width: $with-content;
+    }
 }
 
 .navigation {
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $max-mobile) {
+            // position: fixed;
+            // width: 100%;
+            // top: 0;
+            // left: 0;
+            // z-index: 1;
+            // display: flex;
+        }
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
         position: relative;
         max-width: 100%;
         height: inherit;
@@ -36,12 +48,21 @@
 }
 
 .site-nav {
-display: flex;
-align-items: center; 
+ margin-left: auto;display: flex;
+ align-items: center;
+@media screen and (max-width: $max-mobile) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
 }
 
 .site-nav .item:not(:last-child) {
-@media screen and (min-width: $tablet) {
+@media screen and (max-width: $max-mobile) {
+    margin-bottom: 40px;
+        }
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-right: 30px;
     }
 @media screen and (min-width: $desktop) {
@@ -54,7 +75,7 @@ align-items: center;
     position: relative;
     transition: $transition-timing-function;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
         display: block;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -81,7 +102,7 @@ align-items: center;
         border-radius: 2px;
         border-bottom: 2px solid $background-accent;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet) and (max-width: $max-tablet){
             bottom: 0;
         }
     }

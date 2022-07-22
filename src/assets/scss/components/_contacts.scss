@@ -7,7 +7,7 @@
 .boxContacts {
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-tablet){
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -24,16 +24,34 @@
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
+@media screen and (max-width: $max-mobile) {
+  flex-direction: column;
+  align-items: center;
+}
     @media screen and (min-width: $desktop) {
     width: $with-content;
- 
     }
 }
 
 .itemContacts {
 display: flex;
 align-items: center;
-  @media screen and (min-width: $tablet) {
+@media screen and (max-width: $max-mobile) {
+      width: 230px;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: center;
+      &:not(:first-child) {
+          padding-top: 10px;
+          border-top: 1px solid #fff;
+        }
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet){
       &:not(:first-child) {
         padding-left: 50px;
         border-left: 1px solid #fff;
@@ -79,8 +97,12 @@ flex-direction: column;
 }
 
 .maps {
+  display: none;
+@media screen and (max-width: $max-mobile) {
+display: block;
 margin-right: 10px;
 width: 150px;
 height: 100px;
 border: 0;
+}
 }

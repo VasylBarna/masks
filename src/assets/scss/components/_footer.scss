@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #ECF0F5;
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-tablet){
   padding-top: 50px;
   padding-bottom: 20px;
   }
@@ -18,17 +18,21 @@
   display: flex;
   flex-wrap: nowrap;
   align-content: space-between;
-  flex-direction: row;
+  
   align-items: stretch;
   justify-content: space-between;
   border-bottom: 1px solid #E1E6EC;
-
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  @media screen and (max-width: $max-tablet){
   padding-bottom: 45px;
   margin-bottom: 30px;
     }
   @media screen and (min-width: $desktop) {
   width: $with-content;
+  flex-direction: row;
   padding-bottom: 68px;
   margin-bottom: 47px;
   }
@@ -41,6 +45,14 @@
   align-content: flex-start;
   justify-content: space-between;
   align-items: flex-start;
+    &:last-child {
+    margin-left: 125px;
+    }
+   @media screen and (min-width: $desktop) {
+    &:last-child {
+    margin-left: 370px;
+   }
+  }
 }
 
 .titleListFooter {
@@ -64,6 +76,9 @@
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
+    @media screen and (max-width: $max-mobile) {
+    width: auto;
+      }
 }
 
 .listFooter {
@@ -104,4 +119,14 @@ align-items: stretch;
   font-size: $font-size-btn;
   line-height: 2.14;
  text-align: center;
+}
+
+.navFooter {
+  margin-top: 15px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: baseline;
 }

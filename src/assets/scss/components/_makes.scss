@@ -1,19 +1,21 @@
 .makes {
   margin-left: auto;
   margin-right: auto;
-
-  // width: $with-content;
-  @media screen and (min-width: $tablet) {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+
      @media screen and (min-width: $desktop) {
-        padding-top: 80px;
-        padding-bottom: 80px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      width: $with-content;
      }
 }
 
 .boxMake {
+@media screen and (max-width: $max-mobile) {
+ display: block;
+  text-align: center;
+  }
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -24,7 +26,11 @@
 
 .itemMake {
 display: flex;
-@media screen and (min-width: $tablet) {
+@media screen and (max-width: $max-mobile) {
+display: block;
+}
+
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
   &:not(:last-child) {
   margin-bottom: 40px;
     }
@@ -47,7 +53,7 @@ display: flex;
 }
 
 .first .boxText {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-left: 15px;
     }
     @media screen and (min-width: $desktop) {
@@ -58,7 +64,7 @@ display: flex;
 .second {
   flex-direction: row-reverse;
   .boxText {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
       margin-right: 15px;
     }
     @media screen and (min-width: $desktop) {
@@ -68,7 +74,10 @@ display: flex;
 }
 
 .imageMake {
-@media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
+      margin-bottom: 15px;
+    }
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
 width: 50%;
 }
 @media screen and (min-width: $desktop) {
@@ -87,7 +96,10 @@ width: 100%;}
   font-weight: $font-weight-bold;
   line-height: 1.04;
   color: $title-text-color;
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
+      margin-bottom: 15px;
+    }
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-bottom: 15px;
     font-size: 36px;
     }
@@ -104,6 +116,9 @@ width: 100%;}
     &:first-child {
       text-indent: 1em;
     }
+        @media screen and (max-width: $max-mobile) {
+          margin-bottom: 25px;
+        }
 }
 
 .styleLastBoxMake {
@@ -123,7 +138,7 @@ width: 100%;}
      background-color: $revert-color-button;
   }
   
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
   padding: 10px 20px;
   }
   @media screen and (min-width: $desktop) {
@@ -151,6 +166,9 @@ width: 100%;}
 .styleLastBoxMake {
   display: flex;
   height: 50%;
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
   flex-direction: column;
     flex-wrap: nowrap;
@@ -171,6 +189,11 @@ padding: 0 40px;
   align-items: flex-start;
   background: $background-accent;
   border-radius: 0px 0px 20px 0px;
+  @media screen and (max-width: $max-mobile) {
+    padding: 20px 40px;
+    display: block;
+    border-radius: 0px 0px 20px 20px;
+    }
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     padding: 10px 20px;
     height: auto;
@@ -195,30 +218,38 @@ padding: 0 40px;
 }
 
 .takeContact {
-width: 100%;
-  display: flex;
+ width: 100%;
+ display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   align-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+    @media screen and (max-width: $max-mobile) {
+    display: block;
+      }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 }
 
 .telBoxMakes {
-padding-top: 15px;
-padding-bottom: 10px;
-border-top: 1px solid #fff;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: $max-mobile) {
+    justify-content: flex-start;
+    }
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) { 
+padding-top: 15px;
+  padding-bottom: 10px;
+  border-top: 1px solid #fff;
+  }
 @media screen and (min-width: $desktop) {
 padding-left: 39px;
 border-left: 1px solid #fff;

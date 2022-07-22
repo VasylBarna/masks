@@ -2,15 +2,15 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    // width: $with-content;
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $max-tablet){
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
         }
     @media screen and (min-width: $desktop) {
     padding-top: 50px;
     padding-bottom: 64px;
-        }
+    width: $with-content;
+    }
 }
 
 .hero {
@@ -23,8 +23,7 @@
 }
 
 .content {
-    overflow: hidden;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
 padding-top: 50px;
 width: 370px;
         }
@@ -41,7 +40,11 @@ width: 370px;
     font-size: 14px;
      line-height: 2.14;
     color: $background-accent;
-    @media screen and (min-width: $tablet) {
+@media screen and (max-width: $max-mobile) {
+    margin-bottom: 5px;
+    justify-content: center;
+}
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
         margin-bottom: 15px;
     }
     @media screen and (min-width: $desktop) {
@@ -56,38 +59,67 @@ width: 370px;
    display: flex;
    align-items: center;  
   color: $title-text-color;
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 15px;
-        font-size: 58px;
-        }
-    
-        @media screen and (min-width: $desktop) {
-        margin-bottom: 35px;
-        font-size: 72px;
-        }
+@media screen and (max-width: $max-mobile) {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    text-align: center;
+    }
+@media screen and (min-width: $tablet) and (max-width: $max-tablet){
+    margin-bottom: 15px;
+    font-size: 58px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
+    font-size: 72px;
+    }
 }
 
 .description {
     max-width: 555px;
     text-align: justify;
     line-height: 1.5;
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 25px;
-            }
+    @media screen and (max-width: $max-tablet){
+    margin-bottom: 25px;
+    }
         
-            @media screen and (min-width: $desktop) {
-            margin-bottom: 57px;
-            }
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 57px;
+    }
 }
 
 .heroNavigation {
     display: inline-flex;
+    @media screen and (max-width: $max-mobile) {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        }
 }
 
 .boxHero {
+@media screen and (max-width: $max-mobile) {
+display: none;
+}
     @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: 45.5%;
         }
 }
 
+.boxHeroMob {
+    display: none;
+@media screen and (max-width: $max-mobile) {
+    display: block;
+       width: 50%;
+    }
+}
 
+.revertHero {
+    @media screen and (max-width: $max-mobile) {
+    margin-bottom: 10px;
+}
+}

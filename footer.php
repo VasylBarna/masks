@@ -8,7 +8,8 @@
         which is also a renowned medical equipment testing center in Hong Kong.
       </p>
     </div>
-    <div class="blocksFooter">
+<div class="navFooter">
+      <div class="blocksFooter">
       <p class="titleListFooter">Company</p>
       <ul class="listFooter">
         <li class="itemFooter">Home</li>
@@ -35,6 +36,7 @@
         </ul>
       </div>
     </div>
+</div>
   </div>
   <div class="finishingFooter">
     <p class="textFinishingFooter">Copyright © 2020 N95</p>

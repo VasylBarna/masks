@@ -4,12 +4,15 @@
   <div class="hero">
     <div class="content">
       <p class="subTitle"><?php the_field('product_name')?></p>
-      <h1 class="title">
+      <div class="revertHero">
+        <h1 class="title">
         <?php the_field('main_title')?>
+       <div class="boxHeroMob">
+       <img class="imageHero" alt="image hero" src="<?php bloginfo('template_url'); ?>./src/assets/images/hero-desc.png" />
+       </div>
+      </div>
       </h1>
-      <p class="description">
-        <?php the_field('main_text')?>
-      </p>
+      <p class="description"><?php the_field('main_text') ?></p>
       <div class="heroNavigation">
         <button class="btn btnHero">Shop now</button>
         <button class="btn btnHero">Learn more</button>
@@ -168,7 +171,6 @@
   </div>
 </section>
 
-
 <section class="certification">
   <div class="boxCertification">
     <p class="titleCertification">Our Lab Certification</p>
@@ -266,7 +268,6 @@ They have also passed the quality inspection of several international famous tes
           <iframe
             class="maps"
             target="_blank"
-            hidden
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.037482521322!2d-73.99304888426998!3d40.739200743887416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3b24b424f%3A0x618680d3f8c2f773!2zMTIzIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDAwMywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1657658356982!5m2!1sru!2sua"
             allowfullscreen=""
             loading="lazy"

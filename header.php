@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
 <meta charset="UTF-8" />
-<!-- <link rel="stylesheet" href="/dist/assets/css/style.min.css" /> -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
-  rel="stylesheet"
-/>
-
-<!-- Useful meta tags -->
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta
   name="viewport"
@@ -64,6 +55,16 @@
           </li>
         </ul>
       </div>
+         <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+          <!-- <svg class="svg-menu" width="40" height="40" aria-label="Mobile menu switch">
+            <use class="icon-cross" href="<?php bloginfo('template_url'); ?>./src/assets/images/icon-cross.svg"></use>
+            <use class="icon-menu" href="<?php bloginfo('template_url'); ?>./src/assets/images/icon-menu.svg"></use>
+          </svg> -->
+            <div class="svg-menu" width="40" height="40" aria-label="Mobile menu switch">
+            <img class="icon-cross" href="<?php bloginfo('template_url'); ?>./src/assets/images/icon-cross.svg">
+            <img class="icon-menu" href="<?php bloginfo('template_url'); ?>./src/assets/images/icon-menu.svg">
+          </div>
+        </button>
     </div>
   </nav>
  </header>
