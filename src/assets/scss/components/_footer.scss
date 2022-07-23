@@ -1,6 +1,9 @@
 .footer {
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+      display: flex;
+      text-align: inherit;
+      align-items: baseline;
+      justify-content: space-between;
   background-color: #ECF0F5;
   @media screen and (max-width: $max-tablet){
   padding-top: 50px;
@@ -11,10 +14,16 @@
   padding-bottom: 30px;
   }
 }
+.desktop {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;;
+}
 
 .boxFooter {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: nowrap;
   align-content: space-between;
@@ -31,10 +40,10 @@
   margin-bottom: 30px;
     }
   @media screen and (min-width: $desktop) {
-  width: $with-content;
   flex-direction: row;
   padding-bottom: 68px;
   margin-bottom: 47px;
+  justify-content: center;
   }
 }
 
@@ -122,11 +131,17 @@ align-items: stretch;
 }
 
 .navFooter {
-  margin-top: 15px;
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-around;
-    align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: baseline;
+  @media screen and (max-width: $max-mobile) {
+  margin-top: 15px;
+}
+ @media screen and (min-width: $desktop) {
+  margin-left: auto;
+ }
+
 }

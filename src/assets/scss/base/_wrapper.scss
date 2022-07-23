@@ -1,40 +1,30 @@
 .wrapper {
-  position: relative;
+  // position: relative;
   z-index: 1;
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1245px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3730px left/ auto 2060px no-repeat;
-  @media screen and (min-width: $tablet) and (max-width: $max-tablet) { 
-background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1500px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
-  }
-@media screen and (min-width: $desktop) {
   background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1240px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3010px left/ auto 1650px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
-}
+
+//   @media screen and (min-width: $mobile) and (max-width: $max-mobile) {
+//   background: linear-gradient(rgba(247, 253, 251, 0.9), rgba(247, 253, 251, 0.9)) top/ auto 405px no-repeat,linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1245px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3730px left/ auto 2060px no-repeat;
+//   }
+//   @media screen and (min-width: $tablet) and (max-width: $max-tablet) { 
+// background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(247, 253, 251, 0.85)) top/ auto 1190px no-repeat,linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1500px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
+//   }
+// @media screen and (min-width: $desktop) {
+//   background:linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1240px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3010px left/ auto 1650px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
+// }
 }
 
-.wrapperImg {
+.wrapper .back {
+position: absolute;
+width: auto;
+top: 14px;
+right: 480px;
+z-index: -1;
+border-radius: 0px 0px 0px 150px;
   @media screen and (max-width: $max-mobile) {
-  background: linear-gradient(rgba(247, 253, 251, 0.9), rgba(247, 253, 251, 0.9)) top/ auto 405px no-repeat;
-}
-  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(247, 253, 251, 0.85)) top/ auto 1190px no-repeat;
-  }
-    @media screen and (min-width: $desktop) {
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1190px no-repeat;
-}
-}
-
-.back {
-  position: absolute;
-  width: auto;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 0px 0px 0px 150px;
-  @media screen and (max-width: $max-mobile) {
-    width: 100%;
     }
     @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-    width: 75%;
-    top: 96px;
+    // top: 96px;
     border-radius: 0px 0px 0px 330px;
       }
 }

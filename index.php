@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<main class="main">
+<main class="main container">
   <div class="hero">
     <div class="content">
       <p class="subTitle"><?php the_field('product_name')?></p>
@@ -22,15 +22,11 @@
       <img class="imageHero" alt="image hero" src="<?php bloginfo('template_url'); ?>./src/assets/images/hero-desc.png" />
     </div>
   </div>
- </div>
 </main>
 
-<section class="advantage">
+<section class="advantage container">
   <ul class="list advantageList">
     <li class="item advantageItem">
-      <!-- <svg class="iconStyle">
-            <use class="iconStyle" href="../assets/svgSprite/box.svg"></use>
-          </svg> -->
       <img class="icon" src="<?php bloginfo('template_url'); ?>./src/assets/images/box.svg" alt="box" />
       <div class="advantageText">
         <h2 class="titleAdvantage">Full-Service Shipping</h2>
@@ -78,7 +74,7 @@
 </section>
 
 
-<section class="makes">
+<section class="makes container">
   <div class="boxMake">
     <div class="itemMake first">
       <img class="imageMake" src="<?php bloginfo('template_url'); ?>./src/assets/images/imageMake1.png" alt="image Makes" />
@@ -171,7 +167,7 @@
   </div>
 </section>
 
-<section class="certification">
+<section class="certification container">
   <div class="boxCertification">
     <p class="titleCertification">Our Lab Certification</p>
     <ul class="listCertification">
@@ -188,7 +184,7 @@
   </div>
 </section>
 
-<section class="reasons">
+<section class="reasons container">
   <div class="boxReasons">
     <img
       class="imageReasons"
@@ -235,12 +231,12 @@ They have also passed the quality inspection of several international famous tes
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews container">
 <img class="imageReviews" src="<?php bloginfo('template_url'); ?>./src/assets/images/reviews.png" alt="image Reviews">
 </section>
 
 
-<section class="lastBlock">
+<section class="lastBlock container">
   <div class="boxLastBlock">
     <p class="titleLastBlock">Get One Step Ahead Of Disease</p>
     <p class="textLastBlock">
@@ -254,7 +250,8 @@ They have also passed the quality inspection of several international famous tes
 
 
 <section class="contacts">
-  <div class="boxContacts">
+  <div class="container desktop">
+    <div class="boxContacts">
     <ul class="listContacts">
       <li class="itemContacts">
         <img
@@ -298,6 +295,7 @@ They have also passed the quality inspection of several international famous tes
         >
       </li>
     </ul>
+  </div>
   </div>
 </section>
 

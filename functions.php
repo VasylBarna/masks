@@ -16,5 +16,5 @@ function protective_scripts() {
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
 	wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_script( 'menu-script', get_template_directory_uri() . './src/assets/js/menu-button.js', array(), null, true );
+	wp_enqueue_script( 'menu-script', get_template_directory_uri() . './dist/assets/js/app.js', array(), null, true );
 }    

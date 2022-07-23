@@ -1,15 +1,13 @@
 .main {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (max-width: $max-tablet){
-    padding-top: 25px;
+    padding-top: 60px;
     padding-bottom: 40px;
+    position: relative;
+    @media screen and (min-width: $tablet){
+    padding-top: 30px;
         }
     @media screen and (min-width: $desktop) {
     padding-top: 50px;
     padding-bottom: 64px;
-    width: $with-content;
     }
 }
 
@@ -41,7 +39,8 @@ width: 370px;
      line-height: 2.14;
     color: $background-accent;
 @media screen and (max-width: $max-mobile) {
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: center;
 }
     @media screen and (min-width: $tablet) and (max-width: $max-tablet){
@@ -91,14 +90,18 @@ width: 370px;
 }
 
 .heroNavigation {
-    display: inline-flex;
-    @media screen and (max-width: $max-mobile) {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        }
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @media screen and (min-width: $mobile) and (max-width: $max-mobile) {
+    justify-content: center;
+    align-items: center;
+    }
+    @media screen and (min-width: $desktop) {
+     justify-content: flex-start;
+    }
 }
 
 .boxHero {

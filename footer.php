@@ -1,5 +1,6 @@
 <footer class="footer">
-  <div class="boxFooter">
+  <div class="container desktop">
+    <div class="boxFooter">
     <div class="blocksFooter">
       <img class="imageFooter" src="<?php bloginfo('template_url'); ?>./src/assets/images/logo.png" alt="logo" />
       <p class="textFooter">
@@ -8,7 +9,7 @@
         which is also a renowned medical equipment testing center in Hong Kong.
       </p>
     </div>
-<div class="navFooter">
+    <div class="navFooter">
       <div class="blocksFooter">
       <p class="titleListFooter">Company</p>
       <ul class="listFooter">
@@ -36,13 +37,13 @@
         </ul>
       </div>
     </div>
-</div>
+  </div>
   </div>
   <div class="finishingFooter">
     <p class="textFinishingFooter">Copyright © 2020 N95</p>
   </div>
+  </div>
 </footer>
-</div>
 </div>
 
 <?php wp_footer() ?>
