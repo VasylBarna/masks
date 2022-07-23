@@ -1,30 +1,39 @@
 .wrapper {
-  // position: relative;
-  z-index: 1;
-  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1240px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3010px left/ auto 1650px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
+  position: relative;
+  z-index: 0;
+  
+  @media screen and (min-width: $mobile) and (max-width: $max-mobile) {
+  background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1230px no-repeat,
+    linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3750px left/ auto 2080px no-repeat;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) { 
+background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 920px no-repeat,
+  url('../images/back-hero-desk.png') right 14px no-repeat,
+  linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1025px no-repeat,
+  linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1385px no-repeat;
+  }
+@media screen and (min-width: $desktop) {
+  background:
+  linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1260px no-repeat,
+  url('../images/back-hero-desk.png') right 14px no-repeat, 
+  linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1260px no-repeat,
+  linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1645px no-repeat,
+  url("../images/vector2.png") top 1965px right / auto no-repeat,
+  url("../images/vector.png") top 1000px left / auto no-repeat;
+}
+}
 
-//   @media screen and (min-width: $mobile) and (max-width: $max-mobile) {
-//   background: linear-gradient(rgba(247, 253, 251, 0.9), rgba(247, 253, 251, 0.9)) top/ auto 405px no-repeat,linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1245px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3730px left/ auto 2060px no-repeat;
-//   }
-//   @media screen and (min-width: $tablet) and (max-width: $max-tablet) { 
-// background: linear-gradient(rgba(247, 253, 251, 0.85), rgba(247, 253, 251, 0.85)) top/ auto 1190px no-repeat,linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1000px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3000px left/ auto 1500px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
-//   }
-// @media screen and (min-width: $desktop) {
-//   background:linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto 1240px no-repeat, linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top 3010px left/ auto 1650px no-repeat, url("../images/vector2.png") top 1965px right / auto no-repeat, url("../images/vector.png") top 1000px left / auto no-repeat;
+// .back {
+//   margin: 0.9rem calc(50% - 197px);
+//   display: block;
+//   position: absolute;
+//   z-index: -1;
+//   max-width: 927px;
+//   min-height: 891px;
+//   max-height: 891px;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   background: linear-gradient(rgba(247, 253, 251, 0.8), rgba(247, 253, 251, 0.8)) top/ auto auto no-repeat, url('../images/back-hero-desk.png') 0 0 no-repeat, ;
+//   border-radius: 0px 0px 0px 150px;
 // }
-}
-
-.wrapper .back {
-position: absolute;
-width: auto;
-top: 14px;
-right: 480px;
-z-index: -1;
-border-radius: 0px 0px 0px 150px;
-  @media screen and (max-width: $max-mobile) {
-    }
-    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-    // top: 96px;
-    border-radius: 0px 0px 0px 330px;
-      }
-}

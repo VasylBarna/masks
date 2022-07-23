@@ -19,7 +19,6 @@
 </head>
 <body class="full-document">
     <div class="wrapper">
-      <img class="back" src="<?php bloginfo('template_url'); ?>./src/assets/images/back-hero-desk.png" alt="Background image">        
         <header class="header container">
           <div class="nav-title">
             <a href="./index.php" class="logo"><?php the_field('name_company')?></a>
